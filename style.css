@@ -1,0 +1,48 @@
+body {
+	font-family: "Comic Sans MS";
+}
+
+header {
+	width: 60%;
+	height: 13em;
+	border: 3px solid black;
+	margin: 0 auto;
+}
+#happy-face {
+	border: 3px solid black;
+	float: left;
+}
+#banner {
+	height: 5em;
+	margin-bottom: -5em;
+	float: right;
+	margin-right: 15em;
+	margin-top: 1em;
+}
+.title {
+	font-size: 5em;
+	margin-left: 3.25em;
+	margin-top: 1em;
+}
+.insertwords {
+	border: 3px solid black;
+	width: 60%;
+	margin: 0 auto;
+}
+.insertwords h2 {
+	margin-left: 3em;
+}
+.inputs li {
+	border: 3px solid black;
+	display: inline-block;
+	margin: 2em;
+}
+.results {
+	border: 3px solid black;
+	width: 60%;
+	margin: 0 auto;
+}
+.results p {
+	margin: 2em;
+	font-size: 1.5em;
+}
