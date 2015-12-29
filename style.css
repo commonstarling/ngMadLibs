@@ -32,6 +32,9 @@ header {
 .insertwords h2 {
 	margin-left: 3em;
 }
+.insertwords #male, .insertwords #female {
+	margin-left: 6em;
+}
 .inputs li {
 	border: 3px solid black;
 	display: inline-block;

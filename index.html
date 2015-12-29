@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="madlibApp" >
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.angularjs.org/1.3.10/angular.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script src="script.js"></script>
 	<title>ngMadLibs</title>
 </head>
-<body>
+<body ng-controller="wordCtrl">
 	<header class="header">
 		<img id="happy-face" src="images/mad-lib-happy-face.png"/>
 		<img id="banner" src="images/ng-mad-libs-logo.png" />
 		<h1 class="title">Automate This!</h1>
 	</header>
 	<section class="insertwords">
+		<h2>Select a gender:</h2>
+		<input name="gender" id="male" type="radio" ng-model="gender" ng-click="male()" value="male" required /><label for="male">Male</label>
+		<input name="gender" id="female" type="radio" ng-model="gender" ng-click="female()" value="female" required /><label for="female">Female</label>
 		<h2>Provide the following words:</h2>
 		<ul class="inputs">
-			<li><input type="text" ng-model="FemaleName" placeholder="Female Name"/></li>
+			<li><input type="text" ng-model="Name" placeholder="Name"/></li>
 			<li><input type="text" ng-model="DirtyTask" placeholder="Dirty Task ending in 'ing'"/></li>
 			<li><input type="text" ng-model="ObnoxiousCelebrity" placeholder="Obnoxious Celebrity"/></li>
 		</ul>
@@ -32,8 +35,8 @@
 		</ul>
 	</section>
 	<section class="results">
-		<p>{{FemaleName}} was a {{JobTitle}} who loved technology. Although she loved parts of her job, she absolutely hated {{TediousTask}} and {{DirtyTask}}. So, {{FemaleName}} met with her life mentor, {{Celebrity}}, who told her to learn how to {{UselessSkill}} with Thinkful. Thinkful didn't offer a course on how to {{UselessSkill}}, so she studied programming instead.</p> 
-		<p>What a great decision! With her new skills, {{FemaleName}} built a(n) {{Adjective}} robot named {{ObnoxiousCelebrity}} that not only loved {{DirtyTask}}, but did it {{HugeNumber}} times faster.</p>
+		<p>{{Name}} was a {{JobTitle}} who loved technology. Although {{heShe}} loved parts of {{hisHer}} job, {{heShe}} absolutely hated {{TediousTask}} and {{DirtyTask}}. So, {{Name}} met with {{hisHer}} life mentor, {{Celebrity}}, who told {{himHer}} to learn how to {{UselessSkill}} with Thinkful. Thinkful didn't offer a course on how to {{UselessSkill}}, so {{heShe}} studied programming instead.</p> 
+		<p>What a great decision! With {{hisHer}} new skills, {{Name}} built a(n) {{Adjective}} robot named {{ObnoxiousCelebrity}} that not only loved {{DirtyTask}}, but did it {{HugeNumber | number}} times faster.</p>
 	</section>	
 </body>
 </html>
